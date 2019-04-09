@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 export SQUAD_DIR=data
 python3 run_squad.py \
   --bert_model bert-large-uncased \

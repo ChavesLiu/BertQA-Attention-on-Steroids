@@ -1,5 +1,5 @@
 export SQUAD_DIR=data
-python run_squad.py \
+python3 run_squad.py \
   --bert_model bert-large-uncased \
   --do_train \
   --do_predict \

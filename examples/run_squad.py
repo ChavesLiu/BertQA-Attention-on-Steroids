@@ -892,7 +892,8 @@ def main():
         raise ValueError("Output directory () already exists and is not empty.")
     os.makedirs(args.output_dir, exist_ok=True)
 
-    tokenizer = BertTokenizer.from_pretrained(args.bert_model, do_lower_case=args.do_lower_case)
+    tokenizer = BertTokenizer.from_pretrained(args.bert_model, do_lower_case=args.do_lower_case,
+                                              cache_dir="/home/liuchengwei/bert_data/uncased_L-24_H-1024_A-16")
 
     train_examples = None
     num_train_optimization_steps = None
